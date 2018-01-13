@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Neucha');
+@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed');
+
+body {
+    background: #84bab9;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #12005e;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+
+    margin-top: 70px;
+
+}
+
+
+h1, h2, h3, h4, h5, h5 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: rgba(10, 10, 57, 0.88);
+}
+
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.centered {
+    text-align: center;
+}
+
+a {
+    color: #f85c37;
+}
+
+a:hover, a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.navbar {
+    font-weight: 800;
+    font-size: 19px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Neucha', cursive;
+}
+
+.navbar-inverse {
+    background: #03062d;
+    border-color: #2D0919;
+
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+    background-color: #aeaeae;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #999;
+    font-weight: bolder;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: ;
+}
+
+#headerwrap {
+    background: url(home/img/header-bg.jpg) no-repeat center top;
+    margin-top: -10px;
+    padding-top: 20px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-webkit-background-size: cover;
+    -o-webkit-background-size: cover;
+    -background-size: cover;
+
+}
+
+#headerwrap h1 {
+    margin-top: 100px;
+    color: #000051;
+    font-size: 77px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+#headerwrap h2 {
+    color: #000051;
+    font-size: 44px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.w {
+    padding-top: 35px:
+}
+
+.w h4 {
+    font-size: 25px;
+}
+
+#dg {
+    background: #e0e0e0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: center;
+
+
+}
+
+#dg  p {
+    font-size: 15px;
+    text-align:justify
+    max-width: 100%;
+    margin: 20px 0;
+
+}
+#dg h4 {
+	font-size: 25px;
+
+}
+
+.tilt {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    max-width: 100%;
+    margin: 20px 0;
+
+
+}
+
+.tilt:hover {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+
+}
+
+.wb {
+    padding-top: 35px;
+    margin-bottom: 0;
+}
+
+.wd h4 {
+    font-size: 35px;
+}
+
+#r {
+    background: #aeaeae;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#r h4 {
+    color: white;
+    font-size: 37px;
+}
+
+#r p {
+    color: white;
+}
+
+
+
+
+#footer {
+    background: #2d2d2d;
+    padding-top: 30px:
+    padding-bottom: 20px;
+}
+
+#footer i {
+    color: #dbdbdb;
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+#footer i:hover {
+    color: #ff7878;
+
+}
+
+
+
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    height: auto;
+    line-height: 1;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+html,
+body {
+    height: 500px;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+
+}
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+.carousel-caption h1 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    text-align: center;
+    background-position: center center;
+    padding-top: 50px;
+    color: #041f08;
+    font-size: 50px ;
+
+}
+
+
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 2px; /* firefox bug fix */
+  width: auto;
+
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------Portfolio Box--------------------------------- */
+
+body.index-page {
+}
+
+body.single-page {
+}
+
+body.single-page .portfolio-box {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+body .wrap-body {
+    background-image: url(home/images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.portfolio-box {
+    display: block;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    max-width: 500px
+}
+
+/****** Zoom Effect ******/
+.portfolio-box.zoom-effect .portfolio-box-caption {
+    background: rgba(0, 0, 0, .45);
+}
+
+.portfolio-box.zoom-effect img {
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.portfolio-box:hover.zoom-effect img {
+    -webkit-transform: scale(1.1); /* Safari and Chrome */
+    -moz-transform: scale(1.1); /* Firefox */
+    -ms-transform: scale(1.1); /* IE 9 */
+    -o-transform: scale(1.1); /* Opera */
+    transform: scale(1.1);
+}
+
+.portfolio-box .portfolio-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-social,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 13px;
+    color: #333856;
+    margin-bottom: 10px;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-social {
+    transition: all 1s ease;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-social i.fa {
+    font-size: 25px;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-social ul li {
+    margin: 20px 5px 0;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-social ul li a {
+    display: block;
+    width: 48px;
+    height: 48px;
+    color: #333856;
+    background: #fff;
+    transition-duration: 0.3s;
+    padding-top: 12px;
+    border-radius: 50%;
+    text-shadow: none;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-social ul li a:hover {
+    color: #fff;
+    background-color: #333856;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+    background: none;
+}
+
+.portfolio-box:hover .portfolio-box-caption .portfolio-box-caption-content .project-social {
+    opacity: 1;
+    height: auto;
+}
+
+.portfolio-box:hover .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box:hover .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 15px;
+    }
+
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 19px;
+    }
+}
+
+form {
+    display: inline-block;
+}
+
+#user-input {
+    height: 25px;
+    width: 50px;
+    font-size: 24px;
+}
+
+#calculator-wrapper {
+    text-align: center;
+}
+
+#answer {
+    padding-top: 8px;
+    font-size: 24px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+#download {
+    background: url(home/img/downloads-bg.jpg) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.download-section {
+    width: 100%;
+    color: #fff;
+    padding: 100px 0;
+}
+
+#download .overlay {
+    background-color: rgba(38, 50, 56, 0.6);
+}
+
+#download.content-section {
+    padding: 0;
+}
+
+#map {
+    width: 100%;
+    height: 200px;
+}
+
+@media (min-width: 767px) {
+    .content-section {
+        padding: 150px 0;
+    }
+
+    .download-section {
+        padding: 200px 0;
+    }
+
+    #map {
+        height: 400px;
+    }
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------Callback-------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+
+.modal-open {
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+
+.modal-backdrop.fade {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-header .close {
+    margin-top: -2px;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+.modal-footer .btn + .btn {
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.modal-footer .btn-group .btn + .btn {
+    margin-left: -1px;
+}
+
+.modal-footer .btn-block + .btn-block {
+    margin-left: 0;
+}
+
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 600px;
+        margin: 30px auto;
+    }
+
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    }
+
+    .modal-sm {
+        width: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        width: 900px;
+    }
+}
+
+
+.tilt>h3>p {
+   margin: 1em;
+    width: 150px;
+    height: 55px;
+    overflow: hidden;
+}
+
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load bootstrap3 %}
+<html {% if request.LANGUAGE_CODE %} lang="{{ request.LANGUAGE_CODE }}" {% endif %}>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="widh=device-width, initial-scale=1.0">
+    <title>{% block bootstrap3_title %} VIKdesing {% endblock %} </title>
+    {% bootstrap_css %}
+
+    <script src="http://oss.maxdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="http://oss.maxdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    {% if 'javascript_in_head'|bootstrap_setting %}{% bootstrap_javascript jquery=True %}{% endif %}
+    {% block bootstrap3_extra_head %}{% endblock %}
+    {% load staticfiles %}
+    <link rel="stylesheet" href={% static "style.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "home/css/font-awesome.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/bootstrap.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "home/js/bootstap.js" %} type="text/js">
+    <link rel="stylesheet" href={% static "home/css/lightbox.css" %} type="text/css">
+
+</head>
+<body>
+{% block bootstrap3_content %}{% endblock %}
+{% if not 'javascript_in_head'|bootstrap_setting %}{% bootstrap_javascript jquery=True %}{% endif %}
+{% block bootstrap3_extra_script %}{% endblock %}
+</body>
+{# <script src={% static "main/script.js" %}></script> #}
+<script src={% static "home/js/lightbox-plus-jquery.min.js" %}></script>
+{% block add_script %}{% endblock %}
+</html>

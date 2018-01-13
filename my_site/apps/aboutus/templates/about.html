@@ -1,0 +1,26 @@
+{% extends 'main.html' %}
+{% load bootstrap3 %}
+{% load staticfiles %}
+{% block bootstrap3_extra_head %}
+    <header id="head" class="secondary"></header>
+	<div class="container ms">
+		<div class="row">
+			<!-- Article main content -->
+			<article class="col-sm-8 col-xs-6 col-lg-12 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">Про нас</h1>
+				</header>
+                {% for about in abouts %}
+				    <h3>{{ about.about_title }}</h3>
+                    <p>{% if about.about_img  %}<img src="{{ about.about_img.url }}" alt="" class="img-rounded pull-right" width="300" >{% endif %}{{ about.about_test }}</p>
+                {% endfor %}
+			</article>
+			<!-- /Article -->
+
+		</div>
+	</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'my_bootstrap3.html' %}}
+{% load bootstrap3 %}
+{% load staticfiles %}
+{% block bootstrap3_content %}
+
+    <nav class="navbar navbar-inverse navbar-fixed-top headroom">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"><img class="img-responsive2" src={% static 'home/img/vik.png' %}  width="37" height="37" ></a>
+            </div>
+            <div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="{% if request.resolver_match.url_name == "index" %}active{% endif %}"><a href="{% url 'index' %}">Головна</a></li>
+					<li class="{% if request.resolver_match.url_name == "aboutus" %}active{% endif %}"><a href="{% url 'aboutus' %}">Про нас</a></li>
+					<li class="{% if request.resolver_match.url_name == "portfolio" %}active{% endif %}"><a href="{% url 'portfolio' %}">Портфоліо</a></li>
+					<li class="{% if request.resolver_match.url_name == "price" %}active{% endif %}"><a href="{% url 'price' %}">Прайс-лист</a></li>
+					<li><a data-toggle="modal" href="#login-modal" ><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+        </div>
+    </nav>
+
+
+    <div id="footer">
+		<div class="row centered">
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-vk"></i></a>
+		</div>
+	</div>
+
+{% include 'callback.html' %}
+
+
+
+{% endblock %}
+{% block add_script %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+{% endblock %}
+
+
+

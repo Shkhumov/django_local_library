@@ -1,0 +1,55 @@
+{% extends 'main.html' %}
+{% load bootstrap3 %}
+
+
+{% block bootstrap3_extra_head %}
+    <body class="single-page">
+        <div id="page-content" class="container">
+            <div class="row">
+				<!-----------------Content-------------------->
+                <div class="flex-box no-gutter">
+                    <div class="col-sm-12">
+                        <div class="box-text">
+                            <div class="box-text-inner pd-exlarge-lg pd-small-xs">
+                                <header class="page-header">
+                                    <h1 class="page-title">Авторські роботи</h1>
+                                </header>
+                                {% for album in albums %}
+                                    <h3>{{ album.album_title }}</h3>
+                                    <p>{{ album.album_text }}</p>
+                                    <div class="row">
+                                        {% for photo in photos %}
+                                            {% if photo.project == album %}
+                                            <div class="col-lg-4 col-sm-6">
+                                                <div class="portfolio-box zoom-effect">
+                                                    <img src="{{ photo.image.url }}"  width="400" height="250" alt="">
+                                                    <div class="portfolio-box-caption">
+                                                        <div class="portfolio-box-caption-content">
+                                                            <div class="project-name">
+
+                                                            </div>
+                                                            <div class="project-category">
+                                                                Авторска робота
+                                                            </div>
+                                                            <div class="project-social">
+                                                                <ul class="list-inline">
+                                                                    <li><a href="#"><i class="fa fa-link"></i></a></li>
+                                                                    <li><a href="{{ photo.image.url }}" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><i class="fa fa-search"></i></a></li></ul>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                            {% endif %}
+                                  {% endfor %}
+                              </div>
+                               {% endfor %}
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      </div>
+  </div>
+</body>
+{% endblock %}

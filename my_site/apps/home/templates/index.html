@@ -1,0 +1,123 @@
+{% extends 'main.html' %}
+{% load bootstrap3 %}
+{% load staticfiles %}
+{% block bootstrap3_extra_head %}
+
+
+<body>
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('{% static 'home/img/header-bg.jpg' %}');"></div>
+                <div class="carousel-caption">
+                    <h1>Кожному метру - гідний дизайн!</h1>
+                    <h1>Творимо місце для щастя!</h1>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('{% static 'home/img/07.jpg' %}' );"></div>
+                <div class="carousel-caption">
+                     <h1>Стильно та практично</h1>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('{% static 'home/img/02.jpg' %}');"></div>
+                <div class="carousel-caption" >
+                     <h1>1000 креативних ідей на кожний метер</h1>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </div>
+
+    <div class="container w">
+		<div class="row centered">
+			<br><br>
+            {% for articl in articls %}
+            <div class="col-lg-4">
+				<h2><i class="fa fa-heart"></i></h2>
+				<h4>{{ articl.article_title }}</h4>
+				<p>{{ articl.article_content }}</p>
+			</div>
+            {% endfor %}
+            {% for articl2 in articls2 %}
+            <div class="col-lg-4">
+				<h2><i class="fa fa-laptop"></i></h2>
+				<h4>{{ articl2.article2_title }}</h4>
+				<p>{{ articl2.article2_content }}</p>
+			</div>
+            {% endfor %}
+            {% for contacte in contacts %}
+            <div class="col-lg-4">
+				<h2><i class="fa fa-phone"></i></h2>
+				<h4>{{ contacte.contact_title }}</h4>
+				<p><i class="fa fa-phone" aria-hidden="true"></i>{{ contacte.contact_phone }}</p>
+				<p><i class="fa fa-envelope" aria-hidden="true"></i>{{ contacte.contact_emeil }}</p>
+				<p><a href="{{ contacte.website }}"><i class="fa fa-facebook"></i></a></p>
+			</div>
+            {% endfor %}
+
+
+		</div>
+	</div>
+
+
+    <div id="dg">
+		<div class="container">
+			<div class="row sentered">
+				<h4>Популярні стилі в дизайні</h4>
+				<br>
+                {% for post in posts %}
+				<div class="col-xs-6 col-sm-6 col-md-5 col-lg-4">
+					<div class="tilt">
+						<img src="{{ post.post_img.url }}"  width="350" height="220">
+                            <h3 >{{ post.post_title }} </h3>
+						    <p>{{ post.post_content }}</p>
+                        <hr>
+
+                    </div>
+				</div>
+                {% endfor %}
+			</div>
+		</div>
+	</div>
+    {% for reclam in reclams %}
+    <div id="r">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+                    <h4>{{ reclam.reclama_title }}</h4>
+                    <p>{{ reclam.reclama_content }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+    {% endfor %}
+
+</body>
+
+
+
+{% endblock %}
+

@@ -1,0 +1,12 @@
+CouchDB==1.1
+Django==1.11.6
+django-appconf==1.0.2
+django-bootstrap3==9.0.0
+freeze==1.0.10
+gunicorn==19.7.1
+olefile==0.44
+pilkit==2.0
+Pillow==4.3.0
+pytz==2017.2
+six==1.11.0
+psycopg==2.6.2
