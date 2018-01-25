@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = 'e10d!1g&&r=kn=_a$m%j^%ckszw*)he($)=_s#y4d3)=inss=r'
+SECRET_KEY = 'e10d!1g&&r=kn=_a$m%j^%ckszw*)he($)=_s#y4d3)=inss=r'
 #try:
 #    SECRET_KEY
 #except NameError:
@@ -28,12 +28,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
   #     SECRET_KEY = open(SECRET_FILE).read().strip()
    # except IOError:
     #    SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
-SECRET_KEY = os.environ['SECRET_KEY']
+#SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 #DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = ['www.victoria-desing.com']
+ALLOWED_HOSTS = []
 
 DEFAULT_FROM_EMEIL = 'viktoria.desing.v@gmail.com'
 
